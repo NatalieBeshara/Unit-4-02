@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// Created on: 5-Nov-2018
+// Created by: Natalie Beshara
+// Created for: ICS3U
+// This program rounds off decimals
+
+func roundingOffDecimals(decimalEntered : inout Float, roundOffNumberEntered: Float) {
+    var calculate = decimalEntered * pow(10,roundOffNumberEntered) + 0.50
+    
+    var decimaleEntered = Int(calculate)
+    
+    var answer = Float(decimaleEntered) / pow(10,roundOffNumberEntered)
+    decimalEntered = answer
+    
+    
+}
+
+show("Please enter a decimal")
+var decimal : Float = Float(askForDecimal("Enter decimal"))
+
+show ("How many decimal places do you want?")
+let roundOffNumber : Int = Int(askForNumber("# of decimal places"))
+
+roundingOffDecimals(decimalEntered: &amp;decimal, roundOffNumberEntered: Float(roundOffNumber))
+
+show("The number rounded is now \(decimal)")
+</string>
+			<key>ModifiedRange</key>
+			<string>{145, 786}</string>
+			<key>OriginalContent</key>
+			<string>show("What is your name?")
+
+let name = ask("Name")
+
+show("Hi " + name)
+
+</string>
+			<key>OriginalRange</key>
+			<string>{145, 72}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Answers.playgroundchapter/Pages/Text.playgroundpage/Contents.swift</string>
+</dict>
+</plist>
